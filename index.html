@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,300;1,600;1,900&family=Roboto:ital,wght@0,100;0,300;1,500;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+
+
+    <title>Suelen Machado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="imagens/Logo Cinza e Branco de Pintor (2).png" alt="logo Suelen" width="200px">
+        </div>
+        <ul>
+            <li>
+                <a href="https://github.com/suelenmachado" target="_blank">github</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/suelenmachadodev/" target="_blank">linkedin</a>
+            </li>
+            <li>
+                <a href="mailto:msuelen1810@gmail.com" target="_blank">e-mail</a>
+            </li>
+            <li>
+                <a href="https://wa.me/61982656722" target="_blank">whatsapp</a>
+            </li>
+            
+        </ul>
+
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Suelen Machado</h1>
+                <h5>Front-End Developer</h5>
+
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+
+            </div>
+            <div style="display: none;" id="about">
+                <p>Abracei a codificação. 
+                    Minha missão de vida é facilitar a vida do próximo, quando descobri isso não tive duvidas e ser secretária parecia o suficiente, já estudava inglês, dava alguns passos no francês e a relação com a equipe  e com a Direção da empresa era muito boa, mas eu precisava aprender mais, algo diferente e que fosse super desafiador para mim...
+                    Ser dona de um loja ainda não me trazia os desafios que eu queria, nem tinha a sensação de ser facilitadora... Até que um dia aconteceu e foi logo na minha primeira aula de HTML, no meu primeiro "Olá mundo!" entendi tudo...
+                    Entendi que dá sim pra facilitar a vida através da tecnologia, que com linhas de códigos posso solucionar problemas de milhares de pessoas e isso me encanta e faz com que eu queira estudar todo dia pois sei que cada dia dedicado a aprender ou revisar algo, faz com que fique mais próxima da minha missão de vida.</p>
+            </div>
+            <div class="form">
+                <div>
+                    <p> deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="text " placeholder="seu melhor e-mail :)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById("animation");
+            arrow.classList.toggle("rotate");
+            var display = document.getElementById("about");
+            display.classList.toggle("active");
+
+        }
+    </script>
+    <footer>
+        <p>&copy Suelen Machado</p>
+    </footer>
+</body>
+</html>
